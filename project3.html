@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> David's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!---IMPORT BOOTSTRAP 4-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!---IMPORT JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- FONT FILE-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Raleway|Oswald|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+
+  <!-- CSS STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- WEBSITE ICON -->
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+  <div class="projectBack row">
+    <div class="col-md-3">
+      <a class="backButton" href="projects.html"><</a>
+    </div>
+    <div class="col-md-9">
+      <h2> Java </h2>
+    </div>
+  </div>
+
+  <div class="projectTabText" id="myDIV">
+    <h2>Markov Model: A.I. that Generates Text</h2>
+    <p>The Markov Model is a probabilistic model that encodes information
+      by storing different states. This model notices the changes of states and
+      predicts the outcome of these transitional states. By training the A.I.
+      through text, it is able to notice the probability and occurence of a word
+      and predict the next word from a specified text. By training
+      this model with more text, the A.I. is able to mimic any text and will have
+      the capacity to fool a human being.
+    </p>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Input:</label>
+        <input type="input" class="form-control" id="inputMarkov" placeholder="Insert text here to train the model.">
+      </div>
+      <div class="form-group">
+        <label for="output">Output: </label>
+        <input id="outputMarkov" type="textbox" class="form-control" name="output"></input>
+      </div>
+    </form>
+    <button class="markovButton" onclick="writeOutput()">Submit</button>
+    <script src="javascript/Markov.js"></script>
+  </div>
+
+  <footer class="index">
+    <p class="footerText"> &copy; 2019  David Gallardo</p>
+  </footer>
+</body>
+
+</html>

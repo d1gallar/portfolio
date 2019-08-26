@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> David's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!---IMPORT BOOTSTRAP 4-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!---IMPORT JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- FONT FILE-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Raleway|Oswald|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+
+  <!-- CSS STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--- Java Script ---->
+  <script src="javscript/script.js"></script>
+
+  <!-- WEBSITE ICON -->
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<!---NAVIGATION BAR--->
+<nav class="navbar navbar-light navbar-expand-lg w-100">
+  <!--ICON & NAME-->
+  <div class="navbar-header">
+    <div>
+    <a href="index.html" class="pull-left"><img class="logoresize" src="images/logo.png"></a>
+    <a class="navbar-brand" href="index.html">David Gallardo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+    aria-expanded="false" area-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <i class="fa fa-bars"></i>
+    </span>
+  </button>
+  </div>
+</div>
+
+<!---OTHER TABS & COLLAPSE BAR--->
+<div class="collapse navbar-collapse justify-content-end text-right" id="navbarSupportedContent">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html"> Home <span class"sr-only"></span></a>
+    </li>
+    <li class="nav-item" color="black">
+      <a class="nav-link" href="about.html"> About Me</a>
+    </li>
+    <li class="nav-item" color="black">
+      <a class="nav-link" href="projects.html"> Projects</a>
+    </li>
+    <li class="nav-item" color="black">
+      <a class="nav-link active" href="contact.html"> Contact</a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+<body>
+  <!-- Contact Top -->
+  <div>
+    <p class="contactTitle">Contact</p>
+    <p class="contactText">For further contact please fill the following:</p>
+  </div>
+
+  <!--- Contact Form --->
+  <div class="contactForm">
+    <form id="contactForm" method="post" action="">
+      <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+      <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+      <textarea name="message" type="text" class="form-control" placeholder="Message"rows="4" required></textarea><br>
+      <input type="submit" class="form-control submit" value="SEND MESSAGE">
+    </div>
+
+    <!--- Footer --->
+    <footer class="contactFooter">
+      <div>
+        <p class="footerText about"> &copy; 2019 David Gallardo </p>
+      </div>
+    </footer>
+  </body>
+
+  </html>

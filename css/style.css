@@ -1,0 +1,462 @@
+/** --------------General Responsive------------**/
+@media (min-width: 320px) and (max-width: 479px) {
+    #info img {
+        display: none;
+    }
+    #info p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        float:inherit;
+        width:auto;
+    }
+}
+
+.container{
+  position:relative;
+}
+
+/**-------------Navigation Bar-------------**/
+
+.logoresize{
+  width:85px;
+  margin-left: -5%;
+  margin-right: 5%;
+}
+
+.navbar-brand {
+    font-family: 'Karla', sans-serif;
+    color: black;
+    font-weight: lighter;
+    font-size: 22px;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    margin-left:-15%;
+    background: transparent;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: white;
+  font-weight: lighter;
+  background-color: black;
+  border-radius: 200px;
+  border-color: white;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+    margin-left:-10%;
+}
+
+@media (min-width: 320px){
+  .navbar-light .navbar-toggler {
+      margin-left:-15%;
+  }
+}
+
+@media (min-width: 375px){
+  .navbar-light .navbar-toggler {
+      margin-left:0%;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 10% 10%;
+	-ms-transform-origin: 10% 10%;
+	transform-origin: 10% 10%;
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(2) {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.navbar-toggle.x .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 10% 90%;
+	-ms-transform-origin: 10% 90%;
+	transform-origin: 10% 90%;
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(1) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(2) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.navbar-toggle.x.collapsed .icon-bar:nth-of-type(3) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+/**------------Home Page------------------**/
+.hometext{
+  font-family: sans-serif;
+  font-weight: light;
+  color: black;
+  font-size: 20%;
+  background-color: white;
+  align-content: center;
+}
+
+.hometext .small{
+  font-family: sans-serif;
+  font-weight: light;
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  align-content: center;
+}
+span .typeWriter {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+a {
+  font-family: 'Karla', sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+  background-color: white;
+  padding: 15px 15px 15px 15px;
+  background-color: white;
+  text-align: center;
+  align-content: center;
+}
+
+a:hover{
+    color: black;
+    transition: border 0.5s ease-out transparent;
+}
+
+.homeScreen{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background h1.homeTitle {
+    font-size: 5em;
+    font-weight: lighter;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+}
+
+@media(max-width:767px) {
+  .textBlock {
+    margin-left: 10%;
+  }
+}
+
+
+.portrait{
+  margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+hr.homeline{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-color: rgba(0,0,0,0.85);
+  border-style: inset;
+  border-width: 1px;
+}
+
+.skillText{
+  font-size: 6.0em;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.skillBlock{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.skills{
+  margin: 2em auto;
+  padding-top: 5%;
+  text-align: center;
+  background-color: white;
+}
+
+p .inner{
+  font-size: 0.9em;
+  font-family: 'Karla';
+  font-style: light;
+  text-align: center;
+  color: black;
+  padding: 5%;
+  margin: 5%;
+}
+/**-----------Project Page -------------**/
+.projectText{
+  font-size: 6.0em;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.projectBlock{
+  display: inline-block;
+  position: relative;
+}
+
+.projectBlock a img{
+  width:100%;
+  height: 100%;
+  transition: 1s;
+}
+
+.projectBlock p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 'Karla';
+  color: transparent;
+  font-size: 3.5em;
+  opacity: 0%;
+  transition: 0.5s;
+}
+
+.projectBlock:hover a img{
+  filter: brightness(0);
+  transition: 0.5s;
+}
+
+.projectBlock:hover p{
+  color: white;
+}
+
+.projectDiv{
+  display: inline-block;
+  padding: 2%;
+}
+
+.projectBack div{
+    background: rgba(0,0,0,0.98);
+    padding: 25px;
+}
+
+.projectBack h2{
+    background: transparent;
+    text-align: center;
+    color: white;
+    margin-right: 33%;
+    font-size: 2.5em;
+}
+
+.backButton{
+  background-color: transparent;
+  color: white;
+  padding: 30px;
+  margin-left: 25px;
+  margin-top: -5%;
+  border: 2px rgba(0,0,0,98);
+  margin-right: 25px;
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+.backButton:hover{
+  color:white;
+  background: transparent;
+  text-decoration: none;
+}
+
+.projectTabText{
+  font: 'Raleway';
+  font-size: 1.5em;
+  color: rgba(0,0,0,0.98);
+  padding: 60px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+div .proLogo{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.proLogo img{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+#randomCircles{
+  background: rgb(0,0,0,0.98);
+  width:100%;
+  height:100%;
+}
+
+#cube{
+  background: rgb(0,0,0,0.95);
+  width:100%;
+  height:100%;
+}
+
+.markovButton{
+  text-align: center;
+  background: rgb(0,0,0,0.97);
+  border: white;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+
+/**--------------About Me-------------**/
+.aboutTitle{
+  font-size: 6.0em;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.aboutText{
+  font-size: 140%;
+  text-align: right;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 8%;
+  background-color: white;
+}
+
+.design{
+  width:80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.process{
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width:80%;
+  height: 80%;
+}
+
+.resume{
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  align-content: center;
+}
+
+.resumeButton{
+  text-align: center;
+  background: rgb(0,0,0,0.97);
+  border: white;
+  color: white;
+  font: bold;
+  width: 85px;
+  height: 35px;
+  border-radius: 3px;
+  margin-left: 50%;
+}
+
+/**--------------Contact----------------**/
+.contactTitle{
+  margin-top: 1%;
+  font-size: 510%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.contactText{
+  font-size: 150%;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+form{
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.input{
+  color:rgb(0,0,0,0.97)
+}
+
+.form-control{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0,0,0,0.60);
+  outline: none;
+  color: rgb(0,0,0,0.97);
+
+}
+
+form .submit{
+  background: rgb(0,0,0,0.97);
+  border: transparent;
+  color: white;
+  font: bold;
+}
+
+.submit:hover:{
+  background-color: black;
+}
+
+.contactFooter{
+  margin-top: 5%;
+}
+
+/**--------------Footer------------------**/
+footer {
+  height: 6%;
+}
+
+.footerText {
+    color: rgba(0, 0, 0, 0.795);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> David's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!---IMPORT BOOTSTRAP 4-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!---IMPORT JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- FONT FILE-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Raleway|Oswald|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+
+  <!-- CSS STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- WEBSITE ICON -->
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+  <div class="projectBack row">
+    <div class="col-md-3">
+      <a class="backButton" href="projects.html"><</a>
+    </div>
+    <div class="col-md-9">
+      <h2> HTML, CSS, JavaScript</h2>
+    </div>
+  </div>
+  <div class="projectTabText" id="myDIV">
+    <h2>Randomly Generating Moving Circles on a Screen</h2>
+    <p>This was a quick project that I made integrating the knowledge of HTML, CSS, and
+      JavaScript. This project generates random circles in a specific part of the
+      screen. These circles move in randomly generated directions and never stop.
+      It's something that I have found mesmerizing. This project introduced me
+      to creating computer animations.
+    </p>
+
+    <canvas id="circles" align-content="center"></canvas>
+    <script src="javascript/randomCircles.js"></script>
+    <br> <br> <br> <br>
+    <h2>A Rotating Cube</h2>
+    <p>This project mostly focuses on JavaScript rather than HTML and CSS. This cube
+      calculates the translation and rotation of the vertices of the cube. It stores
+      these coordinates in matrices. Any change in the coordinate plane is stored and
+      is shown on screen.
+    </p>
+    <canvas id="cube" align-content="center"></canvas>
+    <script src="javascript/rotatingCube.js"></script>
+
+  </div>
+  <footer class="index">
+    <p class="footerText"> &copy; 2019  David Gallardo</p>
+  </footer>
+</body>
+
+</html>
