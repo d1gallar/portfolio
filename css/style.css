@@ -16,6 +16,7 @@
   position:relative;
 }
 
+
 /**-------------Navigation Bar-------------**/
 
 .logoresize{
@@ -234,6 +235,12 @@ p .inner{
   text-align: center;
 }
 
+.projectSubText{
+  color: rgba(0,0,0,0.65);
+  font-size: 0.85em;
+  padding: 0 0 0 0;
+}
+
 .projectBlock{
   display: inline-block;
   position: relative;
@@ -250,20 +257,20 @@ p .inner{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font: 'Karla';
+  font-family: : 'Karla',sans-serif;
   color: transparent;
   font-size: 3.5em;
-  opacity: 0%;
-  transition: 0.5s;
-}
-
-.projectBlock:hover a img{
-  filter: brightness(0);
+  opacity: 100%;
   transition: 0.5s;
 }
 
 .projectBlock:hover p{
   color: white;
+}
+
+.projectBlock:hover a img{
+  filter: brightness(0);
+  transition: 0.5s;
 }
 
 .projectDiv{
@@ -306,9 +313,24 @@ p .inner{
   font: 'Raleway';
   font-size: 1.5em;
   color: rgba(0,0,0,0.98);
-  padding: 60px;
   margin-right: 10%;
+  margin-top: 5%;
   margin-left: 10%;
+}
+
+.proVid{
+  align-content: center;
+  margin-left: 10%;
+  background: transparent;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+
+.proCaption{
+  font: 'Raleway';
+  font-size: 1.1em;
+  text-align: center;
+  color: rgba(0,0,0,0.80);
 }
 
 div .proLogo{
@@ -322,13 +344,19 @@ div .proLogo{
   padding: 10px;
 }
 
-#randomCircles{
+#circles{
   background: rgb(0,0,0,0.98);
   width:100%;
   height:100%;
 }
 
 #cube{
+  background: rgb(0,0,0,0.95);
+  width:100%;
+  height:100%;
+}
+
+#waves{
   background: rgb(0,0,0,0.95);
   width:100%;
   height:100%;

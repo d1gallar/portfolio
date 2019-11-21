@@ -24,16 +24,16 @@ function Circle(x,y, dx, dy, radius){
     var randomBlue = Math.random()*255;
     var randomGreen = Math.random()*255;
     //c.strokeStyle = 'rgb('+randomRed','+randomBlue+','+randomGreen+')';
-    c.strokeStyle = 'black';
+    c.strokeStyle = 'white';
     c.stroke();
   }
 
   this.update = function(){
-    if(this.x + this.radius> innerWidth || this.x - this.radius < 0){
+    if(this.x + this.radius> canvas.width || this.x - this.radius < 0){
       this.dx = -this.dx;
     }
 
-    if(this.y + this.radius> innerHeight || this.y - this.radius < 0){
+    if(this.y + this.radius> canvas.height || this.y - this.radius < 0){
       this.dy = -this.dy;
     }
 
@@ -47,8 +47,8 @@ var circleArray = [];
 
 for(var i = 0; i<100; i++){
   var radius = 4;
-  var x = Math.random() * (innerWidth-radius*2) + radius;
-  var y = Math.random() * (innerHeight-radius*2) + radius;
+  var x = Math.random() * (canvas.width-radius*2) + radius;
+  var y = Math.random() * (canvas.height-radius*2) + radius;
   var dx = 10*(Math.random() - 0.5);
   var dy = 10*(Math.random() - 0.5);
   circleArray.push(new Circle(x,y, dx,dy, radius));
@@ -61,5 +61,6 @@ function animate(){
   for(var i = 0; i < circleArray.length; i++){
     circleArray[i].update();
   }
+
 }
 animate();
