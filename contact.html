@@ -80,9 +80,10 @@
     <form id="contactForm" method="post" action="">
       <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
       <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+      <input name="subject" type="subject" class="form-control" placeholder="Subject" required><br>
       <textarea name="message" type="text" class="form-control" placeholder="Message"rows="4" required></textarea><br>
-      <input type="submit" class="form-control submit" value="SEND MESSAGE">
-    </div>
+      <input type="submit" onclick="sendEmail()" class="form-control submit" value="SEND MESSAGE">
+  </div>
 
     <!--- Footer --->
     <footer class="contactFooter">
