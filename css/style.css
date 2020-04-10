@@ -201,31 +201,32 @@ hr.homeline{
 
 .skillText{
   font-size: 6.0em;
-  margin-top: 20%;
-  margin-bottom: 10%;
+  margin-top: 15%;
+  margin-bottom: 15%;
   text-align: center;
 }
 
 .skillBlock{
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.skillImg {
+  height: 12vh;
+  width: 10vw;
 }
 
 .skills{
-  margin: 2em auto;
-  padding-top: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   text-align: center;
   background-color: white;
 }
 
-p .inner{
-  font-size: 0.09em;
-  font-family: 'Karla';
-  font-style: light;
-  text-align: center;
-  color: black;
-  padding: 5%;
-  margin: 5%;
+.inner {
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 /**-----------Project Page -------------**/
 .projectText{
