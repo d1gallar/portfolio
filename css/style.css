@@ -258,7 +258,7 @@ hr.homeline{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: : 'Karla',sans-serif;
+  font-family: 'Karla',sans-serif;
   color: transparent;
   font-size: 3.5em;
   opacity: 100%;
@@ -461,7 +461,7 @@ form .submit{
   font: bold;
 }
 
-.submit:hover:{
+.submit:hover {
   background-color: black;
 }
 
